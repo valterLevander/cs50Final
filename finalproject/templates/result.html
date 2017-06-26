@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Search Results 
+{% endblock %}
+
+{% block main %}
+<h2 class="col-7 col-m-7 header_text" style="text-align: center"> <span class="color">S</span>earch results<span class="color">.</span> </h2>
+    {% for result_project in result_projects %}
+        {% if result_project.endswith(".jpg") == False %}
+            <section class="col-7  col-m-7 result" >
+                <h4 class="col-12 col-m-12 header_text"> {{ result_project }}</h4>
+            </section>
+        {% endif %}
+        {% if result_project.endswith(".jpg") == True %}
+            <section class="col-7  col-m-7 result" >
+                <img src=" {{url_for('send_photo', filename=result_project)}}" alt="contetImage" class="imgf">
+            </section>
+        {% endif %}
+    {% endfor %}
+    
+{% endblock %}

@@ -1,0 +1,17 @@
+Step 1: Crop your shot
+Even well-composed images can benefit from cropping. Using the Crop tool, click and drag the box into position, and then fine-tune the crop by dragging the small box on each side. Level the horizon by dragging any corner of the box to rotate the crop.
+
+Step 2: Remove sensor dust
+Dust and other crud on your camera's sensor is most visible on images taken at small apertures, such as f/16 or less, and on plain areas such as the sky. So the next step is to use the Healing Brush, as shown, to remove any dust spots on the image.
+
+Step 3: Adjust the levels
+To boost contrast, you need to brighten highlights and darken shadows. In the Levels window, drag the right-hand (white) arrow left to meet the end of the histogram to lighten the highlights, and the left-hand (black) arrow right to darken the shadows.
+
+Step 4: boost the saturation
+You may need to fine-tune your shot's colours post-shoot. It's always tempting to add lots of saturation to make your image look more colourful, but - like most adjustments - it's best to keep changes to a minimum. Garish, noisy colours look awful.
+
+Step 5: Convert to black and white
+Mono can look magic, so make use of the simple conversion tool. Use the preset conversions from the drop-down menu to alter how different colours are converted. Choose a preset that gives good contrast without losing highlight or shadow detail.
+
+Step 6: Sharpen up
+Most digital images can benefit from this. The exact settings will depend on whether you are going to view the image on-screen or make a print, but you should always apply the minimum amount needed to avoid adding unwanted digital noise.

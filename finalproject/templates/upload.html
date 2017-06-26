@@ -1,0 +1,32 @@
+<!-- documentation at http://getbootstrap.com/, alternative themes at https://www.bootstrapcdn.com/bootswatch/ -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+<meta content="initial-scale=1, width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='func.js') }}"></script>
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+
+
+<form action="/upload" method="POST" enctype="multipart/form-data" class="col-12">
+    <button class="btnn" type="submit"><a href="{{ url_for('index') }}" style="color: white">Start Page</a></button>
+    <button type="button" class="btnn" id="option">Options</button><br><br><br>
+    <aside class="dropdown col-4 col-m-4" id="opt">
+        <button type="submit" class="btnn jqb" name="submit" value="post">Post</button>
+        <input type=file name=file class=btnn></input>
+    </aside>
+    <input type="input" placeholder="Project name" name="pname" id="instruct">
+    <input type="input" placeholder="Tags" name="tag" id="tag">
+    <h3 id="error"></h3>
+    <section class="col-12 textruta">
+    
+    <textarea rows="40" name="instructions" id="instructions" class="col-9 col-m-9"></textarea>
+</section>
+</form>
+
+
+ 
+{% endblock %}

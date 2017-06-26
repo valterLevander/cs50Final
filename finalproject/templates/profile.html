@@ -1,0 +1,53 @@
+<link href="{{ url_for('static', filename='profile.css') }}" rel="stylesheet"/>
+<!-- documentation at http://getbootstrap.com/, alternative themes at https://www.bootstrapcdn.com/bootswatch/ -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<meta content="initial-scale=1, width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='func.js') }}"></script>
+
+
+{% block main %}
+    
+    <section class="col-12" id="before"></section>
+
+    <header class="col-12">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="logo" class="logo"> </img> 
+        <h2>{{ username }}'s profile<span class="color">.</span></h2> 
+        <img src=" {{url_for('send_image', filename=image_name)}}" alt="profilepicture" class="pb">
+        <div id="menu" class="menuButton"></div>
+        <aside id="dropdown" class="col-3 col-m-5">
+            <div id="menu2" class="menuButton"></div>
+            <ul id="menuul" class="col-12">
+                <li class="col-12" id="firstlimenu"><a href="{{url_for('index')}}">Main page / Feed</a></li>
+                <li class="col-12"><a href="{{url_for('logout')}}">Logout</a></li>
+                <form method=post enctype=multipart/form-data class="col-12">
+                    <input type=submit value="Upload profilepicture" class="col-12">
+                    <div id="uploadwindow"></div>
+                        <input type=file name=file id="ppfile" id="ppfile">
+                    
+                </form>
+            </ul>
+        </aside>
+        
+    </header>
+    <section class="col-12" id="feed"> 
+        <h2 style="margin-top: 75px"> FEED </h2>
+      
+       
+        {% for feed in feeds %}
+            
+                    {% if feed.endswith(".jpg") == False %}
+                        <h4 class="col-m-7 col-7 feedtext feed" style="overflow: scroll">{{ feed }}</h4>
+                       
+                    {% elif feed.endswith(".jpg") == True %}
+                    <section class="col-m-7 col-7 feed" style="text-align: center">
+                            <img src=" {{url_for('send_image', filename=feed)}}" alt="profilepicture" class="imgf">
+                    </section>
+                    {% endif %}
+
+        {% endfor %}
+    </section>
+
+{% endblock %}
+
+

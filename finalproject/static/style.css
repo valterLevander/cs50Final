@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+body {
+font-family: Arial;
+background-image: url("bb.jpg");
+background-size: cover;
+padding-top: 50px;
+text-align: center;
+}
+.btn:hover {
+  background-color: #2980B9;
+}
+.login {
+margin: 20px auto;
+width: 300px;
+}
+.login-screen {
+background-color: #FFF;
+padding: 20px;
+border-radius: 5px
+}
+ 
+.app-title {
+text-align: center;
+color: #777;
+}
+ 
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+.mt{
+    font-size: 32px;
+}
+.color{
+    color: #f48642;
+    background: rgba(0,0,0,0.7);
+}
+.logo{
+  height: 50px;
+  
+}
+#img{
+  margin-left: auto;
+  margin-right: auto;
+}
+#error{
+  color:red;
+}
+input {
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}
+ 
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+ 
+.btn {
+  border: 2px solid transparent;
+  background: #3498DB;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+ 
+.btn:hover {
+  background-color: #2980B9;
+}
+ 
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+	margin-top: 12px;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+a:hover{
+  text-decoration: underline;
+}
+.red{
+  color: red;
+}
+
+.textruta{
+  float: left;
+}
+#instructions{
+  padding: 2%;
+  margin: auto;
+}
+.dropdown{
+  margin: auto;
+  height: auto;
+  display: none;
+}
+.btnn{
+  background: rgba(0,0,0, .7);
+  color: white;
+  border: 2px solid white;
+  transition: all 0.4s;
+  width: 200px;
+  height: 50px;
+}
+.btnn:hover{
+  background-color: #f48642;
+}
+button a{
+  color: white;
+}
+button a:hover{
+  text-decoration: none;
+}
+input.btnn{
+  margin: auto;
+  height: 50px;
+}
+
+footer{
+    height: auto;
+    border-top: 1px grey solid;
+    background: RGBA(0,0,0, 0.8);
+    text-align: center;
+    color: grey;
+}
+.comments{
+  display: none;
+  text-align: left;
+}
+.result{
+  margin: auto;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    header{
+      background-size: 170% 100%;
+      background-position: 10% 10%;
+    }
+    .mt{
+        font-size: 45px;
+    }
+    p{
+        font-size: 25px;
+    }
+    footer{
+      position: absolute;
+      bottom: 0px;
+    }
+    
+    .comments{
+        height: auto;
+        background: rgba(255, 255, 255, 0.9);
+        color: grey;
+        float: left;
+        padding: 10px;
+        display: block;
+        margin-left: 8.33%;
+    }
+}
+@media only screen and (min-width: 770px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    header{
+      background-size: 1920px 1080px;
+    }
+    .mform{
+      left: 12.5%;
+    }
+    .comments{
+      height: 110px;
+      margin-left: 8.33%;
+    }
+        
+}

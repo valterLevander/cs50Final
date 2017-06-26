@@ -1,0 +1,214 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "arial";
+}
+#before{
+  position: fixed;
+  background-color:black;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+header{
+    height: auto;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    color: grey;
+    padding: 10px;
+}
+#feed{
+    height: auto;
+}
+#feed h4{
+    margin-bottom: 300px;
+}
+.color{
+    color: #f48642;
+}
+.pb{
+    height: 100px;
+}
+.logo{
+    height: 50px;
+}
+#setting{
+    position: absolute;
+    top: 290px;
+    left: 0px;
+    height: 150px;
+    border: 2px solid lightgrey;
+    text-align: left;
+    display: none;
+    padding-left: 10px;
+}
+section{
+    float: left;
+    color: grey;
+    height: auto;
+    
+    padding: 10px;
+}
+section h2{
+    text-align:center;
+}
+.btn:hover {
+  background-color: #2980B9;
+}
+.feed{
+    float: left;
+    height: auto;
+    max-height: 30vh;
+    white-space: pre-wrap;
+    padding: 0px;
+}
+.imgf{
+    height: 30vh;
+    margin: auto;
+    float: none;
+    display: block;
+    max-width: 100%;
+}
+.menuButton{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    background-image: url("8738.png");
+    background-size: cover;
+}
+#menu{
+    left: 20px;
+}
+#menu2{
+    background-image: url("close-icon.png");
+    right: 20px;
+}
+#dropdown{
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 2px solid grey;
+    background-color: white;
+    display: none;
+}
+#menuul{
+    height: 80vh;
+    margin-top: 20vh;
+}
+#menuul li{
+    height: 10vh;
+    border-bottom: 2px dashed #f48642;
+    line-height: 10vh;
+    text-align: center;
+    
+    transition: all 0.2s;
+}
+#menuul li:hover{
+    background: rgba(244, 134, 66, .8);
+}
+#menuul li a{
+    color: grey;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+#menuul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+#firstlimenu{
+    border-top: 2px dashed #f48642;
+}
+#ppfile{
+    margin: auto;
+    display: none;
+}
+#uploadwindow{
+    height: 50px;
+    width: 50px;
+    background-image: url("ahober.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:auto;
+    transition: all 0.4s;
+}
+#uploadwindow:hover{
+    background-image: url("Arrow-Down-3-icon.png");
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px dashed #f48642;
+    height: 10vh;
+}
+input[type="submit"]
+{
+    font-size:20px;
+}
+input:hover{
+    background: rgba(244, 134, 66, .8);
+    color: black;
+}
+#ppfile{
+    border: none;
+    height: 5vh;
+}
+.feedtext{
+    margin-top: 10vh;
+    max-height: 50vh;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+ 
+    #setting{
+        top: 110px;
+        height: 250px;
+        
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .feed{
+        margin-left: 20.83%;
+    }
+}
+@media only screen and (min-width: 770px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    .feed{
+        margin-bottom: 150px;
+    }
+
+}

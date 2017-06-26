@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>E-Design</title>
+        <meta charset="UTF-8" />
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+
+        <!-- documentation at http://getbootstrap.com/, alternative themes at https://www.bootstrapcdn.com/bootswatch/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="{{ url_for('static', filename='func.js') }}"></script>
+        
+    </head>
+    
+    <body>
+        
+        <section class="col-12" id="before"></section>
+        
+        <header class="col-12"> 
+        
+            <section class="logga">      
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="logo" class="logo" id="loga"> </img>
+                <h3 class="color" id="e-design">E-design</h4>
+            </section>
+            
+            
+        <form action="/search" method="POST">
+            <input type="text" placeholder="Search for project, user or tags!" id="sear" name="sear">
+        </form>
+            <ul class="col-m-4 col-4" id="butt">
+                <a href="{{ url_for('upload') }}" class="link">Upload</a>
+                <a href="{{ url_for('profile') }}" class="link">Profile</a>
+                <a href="{{ url_for('logout') }}" class="link">Logout</a>
+            </ul>
+        </header>
+        
+        <main style="height= auto;" class="col-12">
+            {% block main %}{% endblock %}
+        </main>
+        <section class="col-7  col-m-7 result" id="inf">
+            <p class="mt color">Inspire and be inspired.</p>
+            <p class="color">Share you creativity and explore others.</p>
+        </section>
+        <footer class="col-12"> 
+            <section class="col-7  col-m-7 result">
+                <h4> CS50 final project By Valter Levander.</h4>
+                <h4>E-Design</h4>
+                <h4>Valter.levander@live.se </h4>
+            </section>
+        </footer>
+    </body>
+</html>

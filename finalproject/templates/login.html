@@ -1,0 +1,63 @@
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+<meta content="initial-scale=1, width=device-width" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='func.js') }}"></script>
+
+{% block title %}
+
+{% endblock %}
+
+{% block main %}
+
+   <img src="{{ url_for('static', filename='logo.png') }}" alt="logo" class="logo"> </img><br><br>
+<form action="/login" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Login</h1>
+			</div>
+ 
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="username" name="username">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+ 
+				<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" name="password">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+ 
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			    <a href="{{ url_for('register') }}"> Register </a>
+			    <p class="red">{{ username }}</p>
+			    <p class="red">{{ password }}</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<p class="mt color">Inspire and be inspired.</p>
+    <p class="color">Share you creativity and explore others.</p>
+    <img src="{{ url_for('static', filename='ed.jpg') }}" alt="logo" class="col-4 col-m-4" style="height: 225px"> </img>
+    <img src="{{ url_for('static', filename='ed2.jpg') }}" alt="logo" class="col-7 col-m-7" style="height: 225px"> </img>
+    <section class="col-3 col-m-3 comments">
+    	<h4> Exposuring the natur and creating a smooth and nice looking sunset! 
+    		<br> Picture taken with a Canon 8D and 25mm lens.<br>Instructions down below</h4>
+    </section>
+    <section class="col-6 col-m-6 comments">
+    	<h4> A cloudy image of skyscrapes at day-time turned into a
+    	beautiful picture with a warm sunset.  #city #sunset #adobeLightroom #noPhotoshop #E-Designn<br>Instructions down below</h4>
+    </section>
+    <footer class="col-12"> 
+        <section class="col-7  col-m-7 result" >
+            <h4> CS50 final project By <span class="color">Valter Levander</span>.</h4>
+            <h4>E-Design, community for the creativ people</h4>
+            <h4> Sweden, Nacka 13141. Valter.levander@live.se </h4>
+        </section>
+    </footer>
+</form>
+
+	
+ 
+{% endblock %}
